@@ -4,7 +4,7 @@
 
 1. Choose a version number per [Semantic Versioning](http://semver.org/) and [our tagging rules](./Versions-and-tagging). Let's call it `ios-vX.Y.Z`. If this is a pre-release, go with `ios-vX.Y.Z-pre.P`, where `P` begins at `1` and increments for each pre-release. 
 1. If necessary, update [the screenshot](https://raw.githubusercontent.com/mapbox/mapbox-gl-native-ios/master/platform/ios/docs/img/screenshot.png).
-1. Update the version [in the podspec](https://github.com/mapbox/mapbox-gl-native-ios/blob/master/platform/ios/Mapbox-iOS-SDK.podspec#L3), [-snapshot-dynamic podspec](https://github.com/mapbox/mapbox-gl-native-ios/blob/master/platform/ios/Mapbox-iOS-SDK-snapshot-dynamic.podspec#L3), and [-stripped podspec](https://github.com/mapbox/mapbox-gl-native-ios/blob/master/platform/ios/Mapbox-iOS-SDK-stripped.podspec#L3).
+1. Update the version by running `./platform/ios/scripts/update-version.sh vX.Y.Z-pre.P`, where `vX.Y.Z-pre.P` is the full semantic version.
 1. Update the `CHANGELOG.md` for the release.
    - Add today’s date to the header for the release.
    - #protip: you can use the compare (`ios-v#.#.#-previous-beta.#...release-N|master`) feature in github to more easily find intra-release changes (i.e. https://github.com/mapbox/mapbox-gl-native-ios/compare/ios-v5.7.0-alpha.1...ios-v5.7.0-beta.1).
