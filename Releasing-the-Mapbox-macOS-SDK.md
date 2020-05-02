@@ -24,7 +24,7 @@ _Takes under 5 minutes_
 
 ## Publish the release
 
-_Takes 10–15 minutes_
+_Takes 15–30 minutes_
 
 1. Run `xcodebuild -version` or `xcode-select -p` to make sure you’re building with the right version of Xcode.
 1. If this is your first time releasing the Mapbox Maps SDK for macOS:
